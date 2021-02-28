@@ -1,18 +1,5 @@
 <template>
   <div class="main">
-    <!-- <div class="main__form-wrap">
-      <form class="main__form">
-        <input type="text" placeholder="Как зовут ребенка?" />
-        <input type="text" placeholder="Возраст?" />
-        <input type="text" placeholder="За что похвалить?" />
-        <input type="text" placeholder="Email?" />
-        <input type="text" placeholder="Ваш текст" />
-      </form>
-    </div>
-    <div class="main__ellipse">
-      <div class="main__ellipse-text"></div>
-    </div>
-    <div class="main__tree"></div> -->
     <div class="main__header"></div>
     <div class="main__body">
       <div class="body__row1">
@@ -47,19 +34,26 @@
                 id="age"
                 placeholder="Возраст"
               />
-              <input
-                class="body__form-inp_short"
+              <select
+                class="body__form-inp_short select-gender"
                 type="text"
                 id="gender"
-                placeholder="Пол"
-              />
+              >
+                <option disabled selected>Пол</option>
+                <option>Муж.</option>
+                <option>Жен.</option>
+              </select>
             </div>
-            <input
-              class="body__form-inp"
+            <select
+              class="body__form-inp select-praise"
               type="text"
               id="praise"
               placeholder="За что похвалить?"
-            />
+            >
+              <option disabled selected>За что похвалить?</option>
+              <option>хз</option>
+              <option>хз</option>
+            </select>
 
             <input
               class="body__form-inp"
@@ -80,6 +74,64 @@
         <div class="body__pidor"></div>
       </div>
     </div>
-    <div class="main__footer"></div>
+    <div class="main__footer">
+      <div class="footer__content">
+        <div class="footer__title">
+          Расскажите всем
+        </div>
+        <div class="footer__links">
+          <div class="footer__list" @click="getLink($event), showAttention()">
+            <div class="footer__list-item" id="tg"></div>
+            <div class="footer__list-item" id="wp"></div>
+            <div class="footer__list-item" id="vb"></div>
+            <div class="footer__list-item" id="fb"></div>
+            <div class="footer__list-item" id="vk"></div>
+          </div>
+          <div class="footer__link">
+            Скопировать ссылку
+          </div>
+        </div>
+        <div class="footer__conditions hide">
+          Условия подписки Плюс Мульти см. здесь
+          https://yandex.ru/legal/yandex_plus_conditions/. 60 дней подписки Плюс
+          Мульти - бесплатно, далее автопродление - 299 руб./мес. Требуется
+          указание данных банковской карты. Предложение до 31.03.2021 г. только
+          для новых пользователей, ранее не оформлявших подписку Плюс Мульти.
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    getLink(event) {
+      let elem = event.target
+      switch (event.target.id) {
+        case 'tg':
+          elem.classList.toggle('blue-tg')
+          break
+        case 'wp':
+          elem.classList.toggle('blue-wp')
+          break
+        case 'vb':
+          elem.classList.toggle('blue-vb')
+          break
+        case 'fb':
+          elem.classList.toggle('blue-fb')
+          break
+        case 'vk':
+          elem.classList.toggle('blue-vk')
+          break
+
+        default:
+          break
+      }
+    },
+    showAttention() {
+      document.querySelector('.footer__conditions').classList.remove('hide')
+    },
+  },
+}
+</script>

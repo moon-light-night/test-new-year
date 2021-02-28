@@ -1,18 +1,30 @@
-@import '@/views/FirstPage/FirstPage.scss';
+@import '@/views/FirstPage/fPageContent.scss';
+@import '@/views/FirstPage/fPageFooter.scss';
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  transition-duration: 0.5s;
+}
+html {
+  min-width: 360px;
 }
 
-/* Remove default padding */
+body {
+  // width: 2708px;
+  height: 1458px;
+  overflow: scroll;
+  background-color: #dcedf1;
+  @media (max-width: 450px) {
+    height: 1151px;
+  }
+}
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -30,30 +42,24 @@ dd {
   margin: 0;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Noto Sans KR', sans-serif;
-  // background-color: rgb(206, 248, 142);
-  background-color: white;
   overflow-x: hidden;
 }
 
-/* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
 ol[class] {
   list-style: none;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img {
   max-width: 100%;
   display: block;
@@ -63,12 +69,10 @@ li {
   list-style-type: none;
 }
 
-/* Natural flow and rhythm in articles by default */
 article > * + * {
   margin-top: 1em;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,

@@ -1,0 +1,130 @@
+.footer {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 761px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    bottom: -120px;
+    @media (max-width: 850px) {
+      width: 88.7vw;
+    }
+    @media (max-width: 450px) {
+      bottom: -100px;
+    }
+    @media (max-width: 330px) {
+      bottom: -80px;
+    }
+  }
+  &__title {
+    font-size: 32px;
+    margin: 0 auto;
+    @media (max-width: 450px) {
+      font-size: 25px;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin: 25.38px 0 33px 0;
+    @media (max-width: 580px) {
+      flex-direction: column;
+      margin: 16px 0 23px 0;
+    }
+  }
+  &__list {
+    display: flex;
+    margin-right: 40px;
+    @media (max-width: 650px) {
+      margin-right: 0;
+    }
+    @media (max-width: 580px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      justify-content: space-around;
+    }
+  }
+  &__list-item {
+    margin-right: 16.85px;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @media (max-width: 580px) {
+      margin: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:nth-child(1) {
+      background-image: url('~@/assets/telega.png');
+      // &:hover {
+      // background-image: url('~@/assets/telega-blue.png');
+      // }
+    }
+    &:nth-child(2) {
+      background-image: url('~@/assets/whatsapp.png');
+    }
+    &:nth-child(3) {
+      background-image: url('~@/assets/viber.png');
+    }
+    &:nth-child(4) {
+      background-image: url('~@/assets/fb.png');
+    }
+    &:nth-child(5) {
+      background-image: url('~@/assets/vk.png');
+    }
+  }
+  &__link {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    min-width: 220px;
+    margin-right: -90px;
+    &:hover {
+      cursor: pointer;
+      background-color: #505dd7;
+      color: white;
+    }
+    @media (max-width: 660px) {
+      margin-right: -50px;
+    }
+    @media (max-width: 580px) {
+      min-width: 205px;
+      margin: 0 auto;
+    }
+  }
+  &__conditions {
+    font-size: 13px;
+    text-align: center;
+    @media (max-width: 700px) {
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.blue {
+  &-tg {
+    background-image: url('~@/assets/telega-blue.png') !important;
+  }
+  &-wp {
+    background-image: url('~@/assets/whatsapp-blue.png') !important;
+  }
+  &-vb {
+    background-image: url('~@/assets/viber-blue.png') !important;
+  }
+  &-fb {
+    background-image: url('~@/assets/fb-blue.png') !important;
+  }
+  &-vk {
+    background-image: url('~@/assets/vk-blue.png') !important;
+  }
+}
