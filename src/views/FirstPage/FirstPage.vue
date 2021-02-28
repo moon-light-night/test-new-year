@@ -16,15 +16,68 @@
     <div class="main__header"></div>
     <div class="main__body">
       <div class="body__row1">
-        <div class="body__yandex"><h1>Yandex</h1></div>
+        <div class="body__yandex"></div>
       </div>
       <div class="body__row2">
-        <div class="body__ellipse"><h1>Ellipse</h1></div>
+        <div class="body__ellipse">
+          <div class="body__ellipse-info">
+            <div class="body__ellipse-title"><p>Новогоднее Чудо!</p></div>
+            <div class="body__ellipse-text">
+              <p>
+                Заполните форму и получите новогоднее именное поздравление для
+                вашего ребенка
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="body__row3">
-        <div class="body__form"><h1>Form</h1></div>
-        <div class="body__tree"><h1>Tree</h1></div>
-        <div class="body__pidor"><h1>Pidor</h1></div>
+        <div class="body__form-wrap">
+          <form class="body__form">
+            <input
+              class="body__form-inp"
+              type="text"
+              id="name"
+              placeholder="Как зовут ребенка?"
+            />
+            <div class="body__form-row">
+              <input
+                class="body__form-inp_short"
+                type="text"
+                id="age"
+                placeholder="Возраст"
+              />
+              <input
+                class="body__form-inp_short"
+                type="text"
+                id="gender"
+                placeholder="Пол"
+              />
+            </div>
+            <input
+              class="body__form-inp"
+              type="text"
+              id="praise"
+              placeholder="За что похвалить?"
+            />
+
+            <input
+              class="body__form-inp"
+              type="text"
+              id="email"
+              placeholder="Email родителя"
+            />
+            <textarea
+              class="body__form-inp"
+              type="text"
+              id="text"
+              placeholder="Ваш текст"
+            />
+            <a class="body__form-btn">Поздравить!</a>
+          </form>
+        </div>
+        <div class="body__tree"></div>
+        <div class="body__pidor"></div>
       </div>
     </div>
     <div class="main__footer"></div>
