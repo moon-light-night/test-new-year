@@ -11,7 +11,7 @@
       width: 88.7vw;
     }
     @media (max-width: 450px) {
-      bottom: -100px;
+      bottom: -130px;
     }
     @media (max-width: 330px) {
       bottom: -80px;
@@ -60,21 +60,33 @@
     }
     &:nth-child(1) {
       background-image: url('~@/assets/telega.png');
-      // &:hover {
-      // background-image: url('~@/assets/telega-blue.png');
-      // }
+      &:hover {
+        background-image: url('~@/assets/telega-blue.png');
+      }
     }
     &:nth-child(2) {
       background-image: url('~@/assets/whatsapp.png');
+      &:hover {
+        background-image: url('~@/assets/whatsapp-blue.png');
+      }
     }
     &:nth-child(3) {
       background-image: url('~@/assets/viber.png');
+      &:hover {
+        background-image: url('~@/assets/viber-blue.png');
+      }
     }
     &:nth-child(4) {
       background-image: url('~@/assets/fb.png');
+      &:hover {
+        background-image: url('~@/assets/fb-blue.png');
+      }
     }
     &:nth-child(5) {
       background-image: url('~@/assets/vk.png');
+      &:hover {
+        background-image: url('~@/assets/vk-blue.png');
+      }
     }
   }
   &__link {
@@ -108,9 +120,6 @@
     }
   }
 }
-.hide {
-  display: none;
-}
 .blue {
   &-tg {
     background-image: url('~@/assets/telega-blue.png') !important;
@@ -126,5 +135,14 @@
   }
   &-vk {
     background-image: url('~@/assets/vk-blue.png') !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__footer {
+    width: 100%;
+    background-image: url('~@/assets/footer-768.png');
+    background-repeat: no-repeat;
+    background-position-x: 0;
   }
 }

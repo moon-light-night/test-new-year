@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  // width: 2708px;
   height: 1458px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #dcedf1;
   @media (max-width: 450px) {
     height: 1151px;

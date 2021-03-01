@@ -80,7 +80,7 @@
           Расскажите всем
         </div>
         <div class="footer__links">
-          <div class="footer__list" @click="getLink($event), showAttention()">
+          <div class="footer__list">
             <div class="footer__list-item" id="tg"></div>
             <div class="footer__list-item" id="wp"></div>
             <div class="footer__list-item" id="vb"></div>
@@ -91,7 +91,7 @@
             Скопировать ссылку
           </div>
         </div>
-        <div class="footer__conditions hide">
+        <div class="footer__conditions">
           Условия подписки Плюс Мульти см. здесь
           https://yandex.ru/legal/yandex_plus_conditions/. 60 дней подписки Плюс
           Мульти - бесплатно, далее автопродление - 299 руб./мес. Требуется
@@ -102,36 +102,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    getLink(event) {
-      let elem = event.target
-      switch (event.target.id) {
-        case 'tg':
-          elem.classList.toggle('blue-tg')
-          break
-        case 'wp':
-          elem.classList.toggle('blue-wp')
-          break
-        case 'vb':
-          elem.classList.toggle('blue-vb')
-          break
-        case 'fb':
-          elem.classList.toggle('blue-fb')
-          break
-        case 'vk':
-          elem.classList.toggle('blue-vk')
-          break
-
-        default:
-          break
-      }
-    },
-    showAttention() {
-      document.querySelector('.footer__conditions').classList.remove('hide')
-    },
-  },
-}
-</script>

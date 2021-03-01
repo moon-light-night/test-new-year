@@ -5,11 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
   width: 100%;
   height: 1458px;
   @media (max-width: 1440px) {
@@ -25,28 +20,29 @@
     background-size: cover;
     height: 232px;
     width: 1710px;
-    margin-left: 200px;
-    // margin-bottom: 20px;
+
     margin-bottom: -300px;
-    @media (max-width: 1100px) {
-      margin-left: -160px;
+    // @media (max-width: 1100px) {
+    //   margin-left: -160px;
+    // }
+    @media (max-width: 1800px) {
+      width: 100%;
     }
     @media (max-width: 450px) {
       background-image: url('~@/assets/lights.png'),
         url('~@/assets/lights2.png');
-      background-position-x: 0, 188px;
+      background-position-x: center, -888px !important;
       background-position-y: 0, -11px;
     }
   }
   &__body {
-    width: 1088px;
+    width: 100%;
     height: 955px;
     position: relative;
-    // top: -50px;
     top: 139px;
+    overflow: hidden;
     @media (max-width: 450px) {
-      height: 680px;
-      // top: -50px;
+      height: min-content;
       top: 100px;
     }
   }
@@ -54,17 +50,21 @@
     background-image: url('~@/assets/footer-test.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 2700px;
-    // height: 888px;
+    width: 100%;
     height: 388px;
     position: relative;
     bottom: -180px;
+    @media (max-width: 1440px) {
+      background-position-x: -600px;
+    }
+    // @media(max-width: 780px){
+    //   background-position-x: -600px;
+    // }
 
     @media (max-width: 450px) {
       width: 100%;
       background-image: url('~@/assets/sm-footer.png');
       position: relative;
-      // top: 0;
       bottom: -150px;
       height: 428px;
     }
@@ -91,24 +91,44 @@
   width: 1040px;
   height: 503px;
   @media (max-width: 450px) {
-    width: 135%;
-    height: 233px;
-    margin-left: 100%;
+    width: 100% !important;
+    background-size: 100% 100% !important;
+    height: 230px;
+    background-position-x: -30px;
+    // margin-left: 100%;
+  }
+  @media (min-width: 780px) and (max-width: 1440px) {
+    min-width: 303px;
+    margin: 0 auto;
+  }
+  @media (min-width: 780px) and (max-width: 1050px) {
+    width: 100%;
+    background-size: 130% 100%;
+  }
+  @media (max-width: 780px) {
+    width: 100%;
+    background-size: 130% 100%;
   }
   &-info {
     display: flex;
     flex-direction: column;
     width: 570px;
     height: 194px;
+    margin-left: 137px;
     color: white;
-    margin: 17px 0 0 137px;
+    @media (max-width: 1440px) {
+      margin-left: 137px;
+    }
     @media (max-width: 900px) {
       position: sticky;
       left: 28px;
     }
+    @media (max-width: 780px) {
+      margin-left: 20px;
+    }
     @media (max-width: 450px) {
       margin-top: 50px;
-      margin-left: 55px;
+      // margin-left: 55px;
       position: relative;
       padding-top: 60px;
     }
@@ -124,7 +144,7 @@
     @media (max-width: 900px) {
       font-size: 62px;
     }
-    @media (max-width: 580px) {
+    @media (max-width: 720px) {
       width: 80%;
       font-size: 47px;
     }
@@ -140,7 +160,7 @@
     font-weight: normal;
     line-height: 35px;
     width: 468px;
-    @media (max-width: 580px) {
+    @media (max-width: 720px) {
       width: 65%;
       font-size: 25px;
       line-height: 23.5px;
@@ -157,19 +177,19 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center, center;
+  min-width: 410px;
   width: 450px;
-  height: 519px;
   margin-top: -111px;
-  min-width: 450px;
+  // min-width: 450px;
   @media (max-width: 900px) {
     z-index: 2;
-    min-width: 415px;
+    width: min-content;
     margin-top: -111px;
   }
   @media (max-width: 450px) {
     margin-top: 35px;
     min-width: 307px;
-    height: 423px;
+    height: 400px;
   }
 }
 .body__form {
@@ -233,6 +253,7 @@
     color: white;
     background-color: rgba(80, 93, 215, 1);
     border-radius: 12px;
+    margin-bottom: 20px;
     &:hover {
       cursor: pointer;
     }
@@ -256,18 +277,25 @@
   margin-top: -517px;
   @media (max-width: 900px) {
     width: 461px;
-    min-width: 400px;
+    // min-width: 400px;
     height: 782px;
     margin-top: -342px;
     z-index: 1;
   }
+  @media (max-width: 570px) {
+    display: none;
+  }
+
   @media (max-width: 450px) {
+    display: block;
     width: 184px;
     height: 307px;
     margin-left: -225px;
     margin-top: -118px;
     background-image: url('~@/assets/sm-tree.png');
     background-size: contain;
+    position: absolute;
+    right: -10%;
   }
 }
 .body__pidor {
@@ -286,7 +314,7 @@
     position: absolute;
     z-index: 1;
     top: 250px;
-    left: 505px;
+    // left: 505px;
   }
 }
 .body__row1 {
@@ -294,18 +322,36 @@
   justify-content: center;
 }
 .body__row2 {
-  margin-top: -131px;
+  // margin-top: -131px;
+  width: max-content;
+  margin: -131px auto 0 auto;
+  @media (max-width: 1050px) {
+    width: 100%;
+  }
   @media (max-width: 450px) {
-    width: 300px;
+    width: 100%;
     margin-top: -90px;
   }
 }
 .body__row3 {
   display: flex;
-  margin-left: 138px;
-  @media (max-width: 900px) {
-    width: 92vw;
-    margin: 0 auto;
+  padding-left: 240px;
+  width: max-content;
+  margin: 0 auto;
+  // @media (max-width: 1440px) {
+  //   padding-left: 240px;
+  //   width: max-content;
+  //   margin: 0 auto;
+  // }
+  @media (min-width: 780px) and (max-width: 1050px) {
+    padding-left: 135px;
+  }
+  // @media (max-width: 900px) {
+  //   width: 92vw;
+  //   margin: 0 auto;
+  // }
+  @media (max-width: 780px) {
+    padding-left: 0;
   }
   @media (max-width: 450px) {
     width: 307px;
@@ -338,5 +384,27 @@
   &:focus {
     background: url('~@/assets/arrow-up.png') 96% / 15% no-repeat;
     background-size: 19px 11px;
+  }
+}
+
+@media (max-width: 780px) {
+  .main__header {
+    background-position-x: center;
+  }
+  .body {
+    // &__ellipse {
+    //   background-size: 130% 100%;
+    //   width: 100%;
+    // }
+    &__row3 {
+      width: 100%;
+    }
+    &__form-wrap {
+      // min-width: 415px;
+      margin-left: 20px;
+    }
+    // &__tree {
+    //   width: 100%;
+    // }
   }
 }
