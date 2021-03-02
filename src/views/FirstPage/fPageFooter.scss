@@ -120,24 +120,6 @@
     }
   }
 }
-.blue {
-  &-tg {
-    background-image: url('~@/assets/telega-blue.png') !important;
-  }
-  &-wp {
-    background-image: url('~@/assets/whatsapp-blue.png') !important;
-  }
-  &-vb {
-    background-image: url('~@/assets/viber-blue.png') !important;
-  }
-  &-fb {
-    background-image: url('~@/assets/fb-blue.png') !important;
-  }
-  &-vk {
-    background-image: url('~@/assets/vk-blue.png') !important;
-  }
-}
-
 @media (max-width: 768px) {
   .main__footer {
     width: 100%;

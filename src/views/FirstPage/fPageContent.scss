@@ -6,13 +6,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 1458px;
+  height: auto;
   @media (max-width: 1440px) {
     background-image: url('~@/assets/mid-bg.png');
   }
   @media (max-width: 450px) {
     background-image: url('~@/assets/sm-bg.png');
-    height: 1151px;
   }
   &__header {
     background-image: url('~@/assets/lights.png');
@@ -20,11 +19,7 @@
     background-size: cover;
     height: 232px;
     width: 1710px;
-
     margin-bottom: -300px;
-    // @media (max-width: 1100px) {
-    //   margin-left: -160px;
-    // }
     @media (max-width: 1800px) {
       width: 100%;
     }
@@ -37,7 +32,7 @@
   }
   &__body {
     width: 100%;
-    height: 955px;
+    height: auto;
     position: relative;
     top: 139px;
     overflow: hidden;
@@ -57,10 +52,6 @@
     @media (max-width: 1440px) {
       background-position-x: -600px;
     }
-    // @media(max-width: 780px){
-    //   background-position-x: -600px;
-    // }
-
     @media (max-width: 450px) {
       width: 100%;
       background-image: url('~@/assets/sm-footer.png');
@@ -95,7 +86,6 @@
     background-size: 100% 100% !important;
     height: 230px;
     background-position-x: -30px;
-    // margin-left: 100%;
   }
   @media (min-width: 780px) and (max-width: 1440px) {
     min-width: 303px;
@@ -128,7 +118,6 @@
     }
     @media (max-width: 450px) {
       margin-top: 50px;
-      // margin-left: 55px;
       position: relative;
       padding-top: 60px;
     }
@@ -180,7 +169,6 @@
   min-width: 410px;
   width: 450px;
   margin-top: -111px;
-  // min-width: 450px;
   @media (max-width: 900px) {
     z-index: 2;
     width: min-content;
@@ -277,7 +265,6 @@
   margin-top: -517px;
   @media (max-width: 900px) {
     width: 461px;
-    // min-width: 400px;
     height: 782px;
     margin-top: -342px;
     z-index: 1;
@@ -298,7 +285,7 @@
     right: -10%;
   }
 }
-.body__pidor {
+.body__person {
   display: none;
   position: absolute;
   width: 140px;
@@ -307,14 +294,13 @@
   top: 235px;
   @media (max-width: 450px) {
     display: block;
-    background-image: url('~@/assets/pidor.png');
+    background-image: url('~@/assets/person.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
     position: absolute;
     z-index: 1;
     top: 250px;
-    // left: 505px;
   }
 }
 .body__row1 {
@@ -322,7 +308,6 @@
   justify-content: center;
 }
 .body__row2 {
-  // margin-top: -131px;
   width: max-content;
   margin: -131px auto 0 auto;
   @media (max-width: 1050px) {
@@ -338,18 +323,9 @@
   padding-left: 240px;
   width: max-content;
   margin: 0 auto;
-  // @media (max-width: 1440px) {
-  //   padding-left: 240px;
-  //   width: max-content;
-  //   margin: 0 auto;
-  // }
   @media (min-width: 780px) and (max-width: 1050px) {
     padding-left: 135px;
   }
-  // @media (max-width: 900px) {
-  //   width: 92vw;
-  //   margin: 0 auto;
-  // }
   @media (max-width: 780px) {
     padding-left: 0;
   }
@@ -392,19 +368,11 @@
     background-position-x: center;
   }
   .body {
-    // &__ellipse {
-    //   background-size: 130% 100%;
-    //   width: 100%;
-    // }
     &__row3 {
       width: 100%;
     }
     &__form-wrap {
-      // min-width: 415px;
       margin-left: 20px;
     }
-    // &__tree {
-    //   width: 100%;
-    // }
   }
 }

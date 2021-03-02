@@ -40,8 +40,8 @@
                 id="gender"
               >
                 <option disabled selected>Пол</option>
-                <option>Муж.</option>
-                <option>Жен.</option>
+                <option>text</option>
+                <option>text</option>
               </select>
             </div>
             <select
@@ -51,8 +51,8 @@
               placeholder="За что похвалить?"
             >
               <option disabled selected>За что похвалить?</option>
-              <option>хз</option>
-              <option>хз</option>
+              <option>text</option>
+              <option>text</option>
             </select>
 
             <input
@@ -71,7 +71,7 @@
           </form>
         </div>
         <div class="body__tree"></div>
-        <div class="body__pidor"></div>
+        <div class="body__person"></div>
       </div>
     </div>
     <div class="main__footer">
