@@ -3,7 +3,12 @@
     <div class="main__header"></div>
     <div class="main__body">
       <div class="body__row1">
-        <div class="body__yandex"></div>
+        <div class="body__yandex">
+          <div class="body__yandex-title"><a href="#">Яндекс</a></div>
+          <div class="body__yandex-plus"><a href="#"> </a></div>
+          <div class="body__yandex-kinopoisk"><a href="#"> </a></div>
+          <div class="body__yandex-music"><a href="#"></a></div>
+        </div>
       </div>
       <div class="body__row2">
         <div class="body__ellipse">

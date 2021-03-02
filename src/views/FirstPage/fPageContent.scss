@@ -62,16 +62,71 @@
   }
 }
 .body__yandex {
-  background-image: url('~@/assets/yandex-big.png');
+  background-image: url('~@/assets/logo-yandex-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center, center;
   width: 377px;
   height: 177px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 53px;
+  &-title {
+    font-size: 32px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-plus {
+    background-image: url('~@/assets/yandex-plus.png');
+    background-size: 100% 100%;
+    background-position: center, center;
+    width: 92px;
+    height: 39px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-kinopoisk {
+    background-image: url('~@/assets/kinopoisk.png');
+    background-size: 100% 100%;
+    background-position: center, center;
+    width: 39px;
+    height: 39px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-music {
+    background-image: url('~@/assets/yandex-music.png');
+    background-size: 100% 100%;
+    background-position: center, center;
+    width: 39px;
+    height: 39px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   @media (max-width: 450px) {
-    background-image: url('~@/assets/sm-yandex.png');
+    background-image: url('~@/assets/small-yandex-bg.png');
     width: 243.41px;
     height: 113px;
+    padding-top: 35px;
+    &-title {
+      font-size: 22px;
+    }
+    &-plus {
+      width: 59px;
+      height: 25px;
+    }
+    &-kinopoisk {
+      width: 25px;
+      height: 25px;
+    }
+    &-music {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 .body__ellipse {
