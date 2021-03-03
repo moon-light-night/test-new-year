@@ -15,7 +15,7 @@
     width: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     margin-left: 167px;
     @media (max-width: $breakpoint_tablet) {
       margin-left: 31px;
@@ -86,11 +86,12 @@
     min-width: 557px;
     height: 900px;
     margin-left: -30px;
+    // @media (max-width: $breakpoint_tablet) {
     @media (max-width: $breakpoint_tablet) {
       min-width: 461px;
       height: 782px;
       display: flex;
-      align-self: end;
+      align-self: flex-end;
       margin-bottom: -86px;
     }
     @media (max-width: $breakpoint_phone) {

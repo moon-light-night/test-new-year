@@ -17,7 +17,7 @@
     @media (max-width: $breakpoint_phone) {
       background-image: url('~@/assets/lights.png'),
         url('~@/assets/lights2.png');
-      background-position-x: center, -500px !important;
+      background-position-x: -600px, -500px !important;
       background-position-y: 0, -11px;
     }
   }
