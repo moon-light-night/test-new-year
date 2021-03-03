@@ -1,22 +1,23 @@
-@import '@/views/FirstPage/fPageContent.scss';
-@import '@/views/FirstPage/fPageFooter.scss';
+@import '@/profile/FirstPage/Content.scss';
+@import '@/profile/FirstPage/Body.scss';
+@import '@/profile/FirstPage/Footer.scss';
+@import '@/profile/FirstPage/Header.scss';
+@import '@/profile/variables.scss';
 
 *,
 *::before,
 *::after {
+  font-family: 'YS Text';
   box-sizing: border-box;
-  transition-duration: 0.5s;
 }
-html {
-  min-width: 360px;
+@font-face {
+  font-family: 'YS Text';
+  src: url('./fonts/YSText-Medium.woff');
+  src: url('./fonts/YSText-Regular.woff');
+  font-style: normal;
+  font-weight: normal;
 }
 
-body {
-  height: auto;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: #dcedf1;
-}
 ul[class],
 ol[class] {
   padding: 0;
@@ -44,8 +45,6 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Noto Sans KR', sans-serif;
-  overflow-x: hidden;
 }
 
 ul[class],
@@ -79,4 +78,13 @@ button,
 textarea,
 select {
   font: inherit;
+}
+html {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+body {
+  height: auto;
+  overflow: hidden;
+  background-color: #dcedf1;
 }
