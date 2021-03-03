@@ -9,6 +9,11 @@ const routes = [
     name: 'Home',
     component: () => import('../views/FirstPage/FirstPage.vue'),
   },
+  {
+    path: '/second-page',
+    name: 'SecondPage',
+    component: () => import('../views/SecondPage/Page.vue'),
+  },
 ]
 
 const router = new VueRouter({
