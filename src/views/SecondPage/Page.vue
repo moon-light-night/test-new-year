@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="second-wrap">
     <div class="second-main">
       <div class="second-main__header">
         <Header></Header>

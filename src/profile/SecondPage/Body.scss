@@ -40,7 +40,7 @@
     width: 410px;
     margin-bottom: 300px;
     @media (min-width: $breakpoint_mini_second_page) {
-      margin-bottom: 20px;
+      margin-bottom: 100px;
     }
   }
   &__card-icon {
@@ -62,7 +62,23 @@
     display: flex;
     justify-content: center;
     z-index: 2;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      z-index: 0;
 
+      display: block;
+      width: 298px;
+      height: 295px;
+
+      background-image: url('~@/assets/Second/kinopoisk-content.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+
+      transform: translate(-50%, -100%);
+    }
     &::after {
       position: absolute;
       content: '';
@@ -71,16 +87,15 @@
       z-index: -1;
 
       display: block;
-      width: 355px;
-      height: 450px;
+      width: 366px;
+      height: 388px;
 
-      background-image: url('~@/assets/Second/kinopoisk-round.png');
+      background-image: url('~@/assets/Second/kinopoisk-circle.png');
       background-repeat: no-repeat;
       background-size: 100% auto;
 
-      transform: translate(-50%, -66%);
+      transform: translate(-50%, -63%);
     }
-
     @media (min-width: $breakpoint_mini_second_page) {
       margin-left: auto;
     }
@@ -94,7 +109,24 @@
     display: flex;
     justify-content: center;
     z-index: 2;
-    margin-bottom: 230px;
+    margin-bottom: 240px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+
+      display: block;
+      width: 318px;
+      height: 286px;
+
+      background-image: url('~@/assets/Second/music-content.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+
+      transform: translate(-50%, -105%);
+    }
     &::after {
       position: absolute;
       content: '';
@@ -103,14 +135,14 @@
       z-index: -1;
 
       display: block;
-      width: 355px;
-      height: 450px;
+      width: 376px;
+      height: 393px;
 
-      background-image: url('~@/assets/Second/music-round.png');
+      background-image: url('~@/assets/Second/plus-circle.png');
       background-repeat: no-repeat;
       background-size: 100% auto;
 
-      transform: translate(-50%, -64%);
+      transform: translate(-50%, -66%);
     }
     @media (min-width: $breakpoint_mini_second_page) {
       margin-right: auto;
@@ -127,6 +159,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+
+      display: block;
+      width: 298px;
+      height: 295px;
+
+      background-image: url('~@/assets/Second/plus-content.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+
+      transform: translate(-50%, -90%);
+    }
     &::after {
       position: absolute;
       content: '';
@@ -135,14 +184,14 @@
       z-index: -1;
 
       display: block;
-      width: 355px;
-      height: 450px;
+      width: 364px;
+      height: 377px;
 
-      background-image: url('~@/assets/Second/plus-round.png');
+      background-image: url('~@/assets/Second/music-circle.png');
       background-repeat: no-repeat;
       background-size: 100% auto;
 
-      transform: translate(-50%, -55%);
+      transform: translate(-50%, -60%);
     }
     @media (min-width: $breakpoint_mini_second_page) {
       margin-left: auto;

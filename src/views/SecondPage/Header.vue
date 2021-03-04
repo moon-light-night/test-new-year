@@ -1,12 +1,15 @@
 <template>
   <div class="second-header__content">
-    <!-- <div class="second-header__arrow-down"></div> -->
-    <div class="second-header__arrow-back"></div>
+    <div class="second-header__arrow-down"></div>
+    <div class="second-header__arrow-back">
+      <p class="second-header__arrow-back-text">На главную</p>
+    </div>
 
     <div class="second-header__row">
-      <div class="second-header__logo-yandex">
+      <!-- <div class="second-header__logo-yandex">
         <div class="second-header__logo-icicles"></div>
-      </div>
+      </div> -->
+      <Yandex class="second-header__logo-yandex"></Yandex>
     </div>
     <div class="second-header__video-wrap">
       <div class="second-header__video-content"></div>
@@ -25,6 +28,7 @@
 <script>
 import Button from '@/components/Button'
 import Links from '@/components/Links'
+import Yandex from '@/components/Yandex'
 export default {
   data: () => ({
     send: 'Отравить на почту',
@@ -32,6 +36,7 @@ export default {
   components: {
     Button,
     Links,
+    Yandex,
   },
 }
 </script>
