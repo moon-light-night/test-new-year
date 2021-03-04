@@ -7,6 +7,9 @@
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    @media (max-width: $breakpoint_mini_second_page) {
+      padding-top: 60px;
+    }
   }
   &__logo-yandex {
     width: 377px;
@@ -15,6 +18,9 @@
     border: 2px solid black;
     top: 77px;
     margin: 0 auto;
+    @media (max-width: $breakpoint_mini_second_page) {
+      margin: 0 auto 28px;
+    }
   }
   &__logo-icicles {
     border: 2px solid black;
@@ -44,11 +50,16 @@
     border: 2px solid black;
     margin: 0 10px;
     padding: 24px 26px 59px 26px;
-    min-width: 340px;
+    min-width: 250px;
     border-radius: 30px;
+    @media (max-width: $breakpoint_mini) {
+      padding: 8px 8px 20px 8px !important;
+    }
     @media (max-width: $breakpoint_mini_second_page) {
-      margin: 0;
-      min-width: 320px;
+      padding: 18px 18px 32px 18px;
+    }
+    @media (min-width: $breakpoint_tablet) and (max-width: $breakpoint_tablet) {
+      padding: 24px 26px 59px 26px;
     }
   }
   &__video-content {
@@ -78,6 +89,9 @@
     display: flex;
     width: 100%;
     padding: 0 30px 0 30px;
+    @media (max-width: $breakpoint_mini_second_page) {
+      padding: 0 58px 0 58px;
+    }
   }
   &__arrow-down {
     background-color: gray;
@@ -95,6 +109,9 @@
     background-color: gray;
     border: 2px solid black;
     margin: 0 59px;
+    @media (max-width: $breakpoint_mini_second_page) {
+      display: none;
+    }
   }
   &__share {
     font-size: 30px;

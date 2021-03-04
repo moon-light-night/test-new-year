@@ -1,10 +1,10 @@
 <template>
-  <a>{{ msg }}{{ getLink }}{{ send }}</a>
+  <a>{{ msg }}{{ getLink }}{{ send }}{{ active }}</a>
 </template>
 
 <script>
 export default {
-  props: ['msg', 'getLink', 'send'],
+  props: ['msg', 'getLink', 'send', 'active'],
 }
 </script>
 
