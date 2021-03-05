@@ -1,16 +1,16 @@
 <template>
   <div class="header__content">
     <div class="header__lights"></div>
-    <Yandex></Yandex>
+    <NavList></NavList>
     <div class="header__gradient"></div>
   </div>
 </template>
 
 <script>
-import Yandex from '@/components/Yandex'
+import NavList from '@/components/NavList'
 export default {
   components: {
-    Yandex,
+    NavList,
   },
 }
 </script>

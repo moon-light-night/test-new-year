@@ -1,10 +1,10 @@
 <template>
   <div class="header__yandex-body-wrap">
-    <div class="header__yandex-body">
+    <ul class="header__yandex-body">
       <div class="header__yandex-plus"><a href="#"></a></div>
       <div class="header__yandex-kino"><a href="#"> </a></div>
       <div class="header__yandex-music"><a href="#"></a></div>
-    </div>
+    </ul>
     <img
       src="@/assets/yandex-icicles-big.png"
       alt="img"
