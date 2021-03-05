@@ -31,13 +31,18 @@
     display: flex;
     flex-direction: column;
     margin: -153.25px auto 0 auto;
-    padding-top: 53px;
+
+    padding-top: 53px !important;
+
     @media (max-width: $breakpoint_phone) {
       margin: -195px auto 0 auto;
     }
     @media (max-width: $breakpoint_mini) {
       margin: -195px auto 0 auto;
       width: 243px;
+      padding-top: 37px !important;
+      height: auto;
+      background-size: 100% 104px;
     }
   }
   &__yandex-body {
@@ -124,6 +129,7 @@
     }
     @media (max-width: $breakpoint_mini) {
       margin-top: 32px;
+      margin-top: 22px;
     }
   }
 }

@@ -14,9 +14,11 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 250px;
+      font-size: 32px;
     }
     @media (min-width: $breakpoint_mini_second_page) {
       margin-right: auto;
+      margin-left: 10px;
     }
     @media (min-width: $breakpoint_desktop_second_page) {
       margin-left: auto;
@@ -47,6 +49,11 @@
     min-width: 74px;
     min-height: 74px;
     margin: 20px;
+    @media (max-width: $breakpoint_mini_circles) {
+      margin: 16px;
+      min-width: 60px;
+      min-height: 60px;
+    }
   }
   &__card-icon-kinopoisk {
     background-image: url('~@/assets/yandex-kino.png');
@@ -78,6 +85,10 @@
       background-size: 100% auto;
 
       transform: translate(-50%, -100%);
+      @media (max-width: $breakpoint_mini_circles) {
+        width: 218px;
+        top: 120%;
+      }
     }
     &::after {
       position: absolute;
@@ -95,6 +106,10 @@
       background-size: 100% auto;
 
       transform: translate(-50%, -63%);
+      @media (max-width: $breakpoint_mini_circles) {
+        width: 280px;
+        top: 120%;
+      }
     }
     @media (min-width: $breakpoint_mini_second_page) {
       margin-left: auto;
@@ -126,6 +141,10 @@
       background-size: 100% auto;
 
       transform: translate(-50%, -105%);
+      @media (max-width: $breakpoint_mini_circles) {
+        width: 218px;
+        top: 120%;
+      }
     }
     &::after {
       position: absolute;
@@ -143,6 +162,10 @@
       background-size: 100% auto;
 
       transform: translate(-50%, -66%);
+      @media (max-width: $breakpoint_mini_circles) {
+        width: 280px;
+        top: 120%;
+      }
     }
     @media (min-width: $breakpoint_mini_second_page) {
       margin-right: auto;
@@ -174,7 +197,11 @@
       background-repeat: no-repeat;
       background-size: 100% auto;
 
-      transform: translate(-50%, -90%);
+      transform: translate(-50%, -95%);
+      @media (max-width: $breakpoint_mini_circles) {
+        width: 218px;
+        top: 95%;
+      }
     }
     &::after {
       position: absolute;
@@ -192,6 +219,10 @@
       background-size: 100% auto;
 
       transform: translate(-50%, -60%);
+      @media (max-width: $breakpoint_mini_circles) {
+        width: 280px;
+        top: 95%;
+      }
     }
     @media (min-width: $breakpoint_mini_second_page) {
       margin-left: auto;
@@ -208,12 +239,21 @@
     display: flex;
     align-items: center;
     margin: 0 0 9px;
+    @media (max-width: $breakpoint_mini_circles) {
+      font-size: 22px;
+      line-height: 23px;
+      width: 154px;
+    }
   }
   &__card-text_center {
     text-align: center;
   }
   &__promo {
     margin-bottom: 8px;
+    background: #eaeeff;
+    border: 2px dashed #a9b4fd;
+    box-sizing: border-box;
+    border-radius: 7px;
   }
   &__promo-text {
     font-size: 13px;
@@ -226,5 +266,8 @@
   &__promo-code {
     font-size: 39.4521px;
     line-height: 46px;
+    @media (max-width: $breakpoint_mini_circles) {
+      font-size: 32px;
+    }
   }
 }

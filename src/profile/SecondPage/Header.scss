@@ -12,9 +12,6 @@
   &__logo-yandex {
     width: 377px;
     height: 177px;
-    background-color: rgb(241, 119, 119);
-    border: 2px solid black;
-    // top: 77px;
     margin: 0 auto !important;
     padding: 0 !important;
     @media (max-width: $breakpoint_mini_second_page) {
@@ -36,25 +33,26 @@
     height: 48px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     background-image: url('~@/assets/Second/arrow-back.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
     margin: 50px auto 0 10px;
     position: absolute;
-    @media (max-width: 880px) {
+    @media (max-width: 750px) {
       display: none;
     }
     &:hover {
       cursor: pointer;
       .second-header__arrow-back-text {
-        display: block;
+        opacity: 1;
       }
     }
   }
   &__arrow-back-text {
-    display: none;
+    transition-duration: 0.3s;
+    opacity: 0;
     font-size: 16px;
     color: #505dd7;
   }
@@ -66,10 +64,10 @@
     min-width: 250px;
     border-radius: 30px;
     @media (max-width: $breakpoint_mini) {
-      padding: 8px 8px 20px 8px !important;
+      padding: 8px 8px 0px 8px !important;
     }
     @media (max-width: $breakpoint_mini_second_page) {
-      padding: 18px 18px 32px 18px;
+      padding: 18px 18px 0px 18px;
     }
     @media (min-width: $breakpoint_tablet) and (max-width: $breakpoint_tablet) {
       padding: 24px 26px 59px 26px;
@@ -83,11 +81,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    &:hover {
+      cursor: pointer;
+    }
     @media (max-width: $breakpoint_tablet_second_page) {
       height: 318px;
     }
     @media (max-width: $breakpoint_phone) {
       height: 161px;
+      margin-bottom: 20px;
     }
   }
   &__video-share {
@@ -104,7 +106,7 @@
     width: 100%;
     padding: 0 30px 0 30px;
     @media (max-width: $breakpoint_mini_second_page) {
-      padding: 0 58px 0 58px;
+      padding: 0 38px 0 38px;
     }
   }
   &__arrow-down {
@@ -117,6 +119,9 @@
     width: 66px;
     height: 93px;
     display: block;
+    &:hover {
+      cursor: pointer;
+    }
     @media (max-width: 1300px) {
       display: none;
     }

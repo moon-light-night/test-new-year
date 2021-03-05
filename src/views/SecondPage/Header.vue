@@ -1,7 +1,7 @@
 <template>
   <div class="second-header__content">
     <div class="second-header__arrow-down"></div>
-    <div class="second-header__arrow-back">
+    <div class="second-header__arrow-back" @click="$router.push('/')">
       <p class="second-header__arrow-back-text">На главную</p>
     </div>
 

@@ -8,12 +8,16 @@
         <div
           class="second-body__card-icon second-body__card-icon-kinopoisk"
         ></div>
-        <div class="second-body__card-text">Новогодняя детская подборка</div>
+        <div class="second-body__card-text">
+          Новогодняя детская подборка
+        </div>
       </div>
 
       <div class="second-body__card second-body__card-music">
         <div class="second-body__card-icon second-body__card-icon-music"></div>
-        <div class="second-body__card-text">Детские плейлисты на новый год</div>
+        <div class="second-body__card-text">
+          Детские плейлисты на новый год
+        </div>
       </div>
       <div class="second-body__card second-body__card-plus">
         <div class="second-body__promo">
