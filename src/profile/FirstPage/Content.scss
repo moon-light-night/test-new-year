@@ -7,12 +7,16 @@
   background-position: center center;
   width: 100%;
   height: auto;
+  &__header {
+    width: 100%;
+    position: absolute;
+  }
   &__body {
     width: 100%;
     height: auto;
-    @media (max-width: $breakpoint_phone) {
-      margin-top: 132px;
-    }
+    // @media (max-width: $breakpoint_phone) {
+    //   margin-top: 132px;
+    // }
   }
   &__footer {
     width: 100%;
