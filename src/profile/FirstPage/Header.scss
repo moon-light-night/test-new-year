@@ -8,9 +8,9 @@
     padding-top: 70px;
   }
   &__lights {
+    position: absolute;
     background-image: url('~@/assets/lights.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-position: center center;
     height: 232px;
     @media (max-width: 1710px) {
@@ -35,7 +35,7 @@
     // margin: -153.25px auto 0 auto;
 
     padding-top: 53px !important;
-
+    z-index: 100;
     // @media (max-width: $breakpoint_phone) {
     //   margin: -195px auto 0 auto;
     // }
@@ -94,7 +94,7 @@
     background-image: url('~@/assets/big-ellipse.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 980px;
+    width: 1200px;
     height: 503px;
     top: 120px;
     // margin: -131.89px auto 0 auto;
@@ -103,8 +103,8 @@
       width: 120%;
       // background-position-x: -100px;
     }
-    @media (max-width: $breakpoint_mini) {
-      height: 100%;
+    @media (max-width: 500px) {
+      height: 100% !important;
     }
     @media (max-width: $breakpoint_mini_second_page) {
       height: 140%;

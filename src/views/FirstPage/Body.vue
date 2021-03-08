@@ -56,7 +56,7 @@
             id="text"
             placeholder="Ваш текст"
           />
-          <Button class="big-btn btn" :msg="msg"></Button>
+          <Button class="btn btn-form" :msg="msg"></Button>
         </form>
         <img src="@/assets/form-icicles.png" alt="img" class="form__icicles" />
       </div>

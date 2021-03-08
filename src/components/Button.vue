@@ -1,5 +1,5 @@
 <template>
-  <a>{{ msg }}{{ getLink }}{{ send }}{{ active }}</a>
+  <a>{{ msg || getLink || send || active }}</a>
 </template>
 
 <script>
@@ -24,14 +24,6 @@ export default {
   &:hover {
     cursor: pointer;
     background-color: rgb(62, 73, 175);
-  }
-}
-.big-btn {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  @media (max-width: $breakpoint_mini) {
-    font-size: 18px;
   }
 }
 </style>

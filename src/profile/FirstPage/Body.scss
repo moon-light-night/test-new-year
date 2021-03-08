@@ -16,14 +16,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
     padding-top: 210px;
-    margin-left: 167px;
-    z-index: 1;
+    z-index: 10;
     @media (max-width: $breakpoint_tablet) {
       margin-left: 15px;
     }
-    @media (max-width: $breakpoint_mini_second_page) {
+    @media (max-width: 760px) {
       padding-top: 190px;
     }
   }
@@ -43,38 +41,38 @@
     @media (max-width: $breakpoint_mini_second_page) {
       margin-bottom: 70px;
     }
+    @media (max-width: 500px) {
+      margin-bottom: 0;
+    }
   }
   &__section-title {
-    // height: 68px;
     width: 570px;
     font-size: 64px;
     font-weight: bold;
     margin: 8px 0 21px 0;
-    // @media (max-width: $breakpoint_mini_second_page) {
-    //   font-size: 32px;
-    //   margin: 20px 0;
-    //   height: auto;
-    // }
     @media (max-width: $breakpoint_mini_second_page) {
+      font-size: 28px;
+      width: 70%;
+      margin: 30px 0 15px 0;
+    }
+    @media (max-width: 500px) {
       font-size: 22px;
       width: 250px;
       margin: 8px 0 10px 0;
     }
   }
   &__section-text {
-    // height: 105px;
-    width: 60%;
+    width: 80%;
     font-size: 27px;
     line-height: 35px;
-    // @media (max-width: $breakpoint_phone) {
-    //   font-size: 17px;
-    //   height: auto;
-    //   width: 300px;
-    //   line-height: 18px;
-    // }
     @media (max-width: $breakpoint_mini_second_page) {
+      font-size: 18px;
+      width: 70%;
+      line-height: 20px;
+    }
+    @media (max-width: 500px) {
       font-size: 14px;
-      width: 250px;
+      width: 220px !important;
       line-height: 16px;
     }
   }
@@ -86,16 +84,18 @@
     min-width: 557px;
     height: 900px;
     margin-top: 100px;
-    margin-left: -170px;
-    // @media (max-width: $breakpoint_tablet) {
+    z-index: 1;
     @media (max-width: $breakpoint_tablet) {
-      // min-width: 461px;
-      height: 782px;
       display: flex;
       align-self: flex-end;
       margin-bottom: -86px;
+      margin-left: -130px;
     }
     @media (max-width: $breakpoint_mini_second_page) {
+      height: 700px;
+      background-size: 80%;
+      margin-bottom: 0;
+      background-position-x: 20px;
     }
     @media (max-width: 500px) {
       position: absolute;
@@ -103,7 +103,7 @@
       min-width: 215px;
       height: 307px;
       right: 0px;
-      top: 235px;
+      top: 135px;
     }
   }
 }
@@ -145,10 +145,13 @@
     margin: 0 auto;
   }
 }
-.big-btn {
+.btn-form {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  @media (max-width: $breakpoint_mini) {
+    font-size: 18px;
+  }
 }
 .small-btn {
   font-weight: 500;

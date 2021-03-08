@@ -1,8 +1,10 @@
 <template>
-  <div class="header__content">
-    <!-- <div class="header__lights"></div> -->
-    <Yandex></Yandex>
-    <div class="header__gradient"></div>
+  <div>
+    <div class="header__lights"></div>
+    <div class="header__content">
+      <Yandex></Yandex>
+      <div class="header__gradient"></div>
+    </div>
   </div>
 </template>
 
