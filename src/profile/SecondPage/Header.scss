@@ -1,4 +1,5 @@
 @import '@/profile/variables.scss';
+
 .second-header {
   &__content {
     height: auto;
@@ -34,15 +35,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('~@/assets/Second/arrow-back.png');
+    background-image: url('~@/assets/SecondPage/arrow-back.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
-    margin: 50px auto 0 10px;
+    margin: 30px auto 0 10px;
     position: absolute;
-    @media (max-width: 750px) {
-      display: none;
-    }
     &:hover {
       cursor: pointer;
       .second-header__arrow-back-text {
@@ -77,7 +75,7 @@
     height: 461px;
     margin-bottom: 48px;
     border-radius: 16px;
-    background-image: url('~@/assets/Second/video-field.png');
+    background-image: url('~@/assets/SecondPage/video-field.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -110,7 +108,7 @@
     }
   }
   &__arrow-down {
-    background-image: url('~@/assets/Second/arrow-down.png');
+    background-image: url('~@/assets/SecondPage/arrow-down.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -129,7 +127,7 @@
   &__icicles {
     min-width: 340px;
     height: 53px;
-    background-image: url('~@/assets/Second/icicles.png');
+    background-image: url('~@/assets/SecondPage/icicles.png');
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 59px;

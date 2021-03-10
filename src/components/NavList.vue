@@ -6,12 +6,12 @@
       <div class="header__yandex-music"><a href="#"></a></div>
     </ul>
     <img
-      src="@/assets/yandex-icicles-big.png"
+      src="@/assets/FirstPage/yandex-icicles-big.png"
       alt="img"
       class="header__yandex-icicles_big"
     />
     <img
-      src="@/assets/yandex-icicles-small.png"
+      src="@/assets/FirstPage/yandex-icicles-small.png"
       alt="img"
       class="header__yandex-icicles_small"
     />

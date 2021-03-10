@@ -1,5 +1,5 @@
 .second-wrap {
-  background-image: url('~@/assets/Second/main-bg.png');
+  background-image: url('~@/assets/SecondPage/main-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -15,22 +15,15 @@
     margin-bottom: 53px;
   }
   &__body {
-    // background-color: gray;
-    // border: 2px solid black;
     width: 100%;
     display: flex;
     justify-content: center;
     width: 100%;
   }
   &__footer {
-    // background-color: #cc3e3e;
-    // border: 2px solid black;
     height: 388px;
     width: 100%;
   }
-  // @media (max-width: $breakpoint_mini) {
-  //   width: 100%;
-  // }
 }
 .second-page__link {
   font-size: 18px;
@@ -43,6 +36,7 @@
   justify-self: center;
   margin: 0 auto;
   border: 1px solid #e2e2e2;
+  z-index: 1;
   border-radius: 4px;
   transition-duration: 0.3s;
   &:hover {

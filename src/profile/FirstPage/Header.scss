@@ -4,35 +4,35 @@
   &__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
   }
   &__lights {
-    background-image: url('~@/assets/lights.png');
+    position: absolute;
+    background-image: url('~@/assets/FirstPage/lights.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-position: center center;
     height: 232px;
-    @media (max-width: 1710px) {
-      min-width: 1710px;
-    }
+    min-width: 100%;
+    overflow-x: hidden;
     @media (max-width: $breakpoint_phone) {
-      background-image: url('~@/assets/lights.png'),
-        url('~@/assets/lights2.png');
+      background-image: url('~@/assets/FirstPage/lights.png'),
+        url('~@/assets/FirstPage/lights2.png');
       background-position-x: -600px, -500px !important;
       background-position-y: 0, -11px;
     }
   }
   &__yandex-body-wrap {
     z-index: 1;
-    background-image: url('~@/assets/yandex-ellipse.png');
+    background-image: url('~@/assets/FirstPage/yandex-ellipse.png');
     background-size: 100% 139px;
     background-repeat: no-repeat;
     width: 377px;
     height: 177px;
     display: flex;
     flex-direction: column;
-    margin: -153.25px auto 0 auto;
-
     padding-top: 53px !important;
+<<<<<<< HEAD
 
     @media (max-width: $breakpoint_phone) {
       margin: -195px auto 0 auto;
@@ -41,6 +41,11 @@
     @media (max-width: $breakpoint_mini) {
       margin: -195px auto 0 auto;
       width: 243px;
+=======
+    z-index: 100;
+    @media (max-width: $breakpoint_mini_second_page) {
+      width: 200px;
+>>>>>>> tmp
       padding-top: 37px !important;
       height: auto;
       background-size: 100% 104px;
@@ -51,60 +56,74 @@
     justify-content: space-evenly;
   }
   &__yandex-plus {
-    background-image: url('~@/assets/yandex-plus.png');
+    background-image: url('~@/assets/FirstPage/yandex-plus.png');
     background-size: 100% 100%;
     width: 183.6px;
     height: 38.79px;
     &:hover {
       cursor: pointer;
     }
-    @media (max-width: $breakpoint_mini) {
+    @media (max-width: $breakpoint_mini_second_page) {
       width: 118px;
       height: 25px;
     }
   }
   &__yandex-kino {
-    background-image: url('~@/assets/yandex-kino.png');
+    background-image: url('~@/assets/FirstPage/yandex-kino.png');
     background-size: 100% 100%;
     width: 38.79px;
     height: 38.79px;
     &:hover {
       cursor: pointer;
     }
-    @media (max-width: $breakpoint_mini) {
+    @media (max-width: $breakpoint_mini_second_page) {
       width: 25px;
       height: 25px;
     }
   }
   &__yandex-music {
-    background-image: url('~@/assets/yandex-music.png');
+    background-image: url('~@/assets/FirstPage/yandex-music.png');
     background-size: 100% 100%;
     width: 38.79px;
     height: 38.79px;
     &:hover {
       cursor: pointer;
     }
-    @media (max-width: $breakpoint_mini) {
+    @media (max-width: $breakpoint_mini_second_page) {
       width: 25px;
       height: 25px;
     }
   }
   &__gradient {
-    background-image: url('~@/assets/big-ellipse.png');
+    position: absolute;
+    background-image: url('~@/assets/FirstPage/big-ellipse.png');
+    background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 1021px;
+    width: 1200px;
     height: 503px;
-    margin: -131.89px auto 0 auto;
-    @media (max-width: $breakpoint_tablet) {
-      width: 120%;
-      background-position-x: -100px;
-    }
-    @media (max-width: $breakpoint_phone) {
-      height: 232px;
+    top: 120px;
+    overflow-x: hidden;
+    @media (max-width: 1200px) {
       width: 100%;
-      background-position-x: -50px;
+      background-size: 120% 100%;
+      background-position-x: center;
+    }
+    @media (max-width: $breakpoint_tablet) {
+      background-size: 120% 100%;
+      width: 100%;
+      overflow-x: hidden;
+      background-position-x: center;
+    }
+    @media (max-width: 500px) {
+      height: 100% !important;
+    }
+    @media (max-width: $breakpoint_mini_second_page) {
+      height: 140%;
+      width: 100%;
+      background-position-x: -30px;
       background-repeat: no-repeat;
-      margin: -80px auto 0 auto;
+      background-size: 100% 100%;
+      top: 150px;
     }
   }
   &__yandex-icicles_big {
@@ -112,7 +131,7 @@
     width: 49px;
     margin-left: 97px;
     margin-top: 35.32px;
-    @media (max-width: $breakpoint_phone) {
+    @media (max-width: $breakpoint_mini_second_page) {
       display: none;
     }
   }
@@ -125,10 +144,8 @@
     width: 49px;
     margin-left: 17px;
     margin-top: 11px;
-    @media (max-width: $breakpoint_phone) {
+    @media (max-width: $breakpoint_mini_second_page) {
       display: block;
-    }
-    @media (max-width: $breakpoint_mini) {
       margin-top: 32px;
       margin-top: 22px;
     }

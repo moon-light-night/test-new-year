@@ -1,5 +1,9 @@
 <template>
   <div class="second-wrap">
+    <div class="second-header__arrow-back" @click="$router.push('/')">
+      <p class="second-header__arrow-back-text">На главную</p>
+    </div>
+
     <div class="second-main">
       <div class="second-main__header">
         <Header></Header>

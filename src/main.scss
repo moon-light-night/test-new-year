@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 @import '~normalize.css/normalize.css';
+=======
+@import '@/profile/SecondPage/Header.scss';
+@import '@/profile/SecondPage/Content.scss';
+@import '@/profile/SecondPage/Body.scss';
+>>>>>>> tmp
 
 @import '@/profile/FirstPage/Content.scss';
 @import '@/profile/FirstPage/Body.scss';
@@ -9,11 +15,6 @@
 @import '@/profile/SecondPage/Content.scss';
 @import '@/profile/SecondPage/Body.scss';
 @import '@/profile/SecondPage/Footer.scss';
-
-@import '@/profile/ThirdPage/Header.scss';
-@import '@/profile/ThirdPage/Content.scss';
-@import '@/profile/ThirdPage/Body.scss';
-@import '@/profile/ThirdPage/Footer.scss';
 
 @import '@/profile/variables.scss';
 
