@@ -31,7 +31,7 @@
     border-radius: 12px;
     background-color: white;
     @media (max-width: 500px) {
-      width: 88vw;
+      width: 92vw;
     }
   }
   &__section-info {
@@ -77,7 +77,7 @@
     }
   }
   &__tree {
-    background-image: url('~@/assets/body-tree.png');
+    background-image: url('~@/assets/FirstPage/body-tree.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -85,6 +85,7 @@
     height: 900px;
     margin-top: 100px;
     z-index: 1;
+    overflow-x: hidden;
     @media (max-width: $breakpoint_tablet) {
       display: flex;
       align-self: flex-end;
@@ -99,7 +100,7 @@
     }
     @media (max-width: 500px) {
       position: absolute;
-      background-image: url('~@/assets/tree-small.png');
+      background-image: url('~@/assets/FirstPage/tree-small.png');
       min-width: 215px;
       height: 307px;
       right: 0px;
@@ -165,12 +166,12 @@
   appearance: none;
   background-position-x: right;
   &:enabled {
-    background: url('~@/assets/arrow-down.png') 96% / 15% no-repeat;
+    background: url('~@/assets/FirstPage/arrow-down.png') 96% / 15% no-repeat;
     background-size: 19px 11px;
     background-position-x: right;
   }
   &:focus {
-    background: url('~@/assets/arrow-up.png') 96% / 15% no-repeat;
+    background: url('~@/assets/FirstPage/arrow-up.png') 96% / 15% no-repeat;
     background-size: 19px 11px;
     background-position-x: right;
   }
@@ -182,12 +183,12 @@
   appearance: none;
   background-position-x: right;
   &:enabled {
-    background: url('~@/assets/arrow-down.png') 96% / 15% no-repeat;
+    background: url('~@/assets/FirstPage/arrow-down.png') 96% / 15% no-repeat;
     background-size: 19px 11px;
     background-position-x: right;
   }
   &:focus {
-    background: url('~@/assets/arrow-up.png') 96% / 15% no-repeat;
+    background: url('~@/assets/FirstPage/arrow-up.png') 96% / 15% no-repeat;
     background-size: 19px 11px;
     background-position-x: right;
   }

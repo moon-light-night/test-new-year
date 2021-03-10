@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/FirstPage/FirstPage.vue'),
+    component: () => import('../views/FirstPage/Page.vue'),
   },
   {
     path: '/second-page',

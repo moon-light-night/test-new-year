@@ -1,7 +1,7 @@
 @import '@/profile/variables.scss';
 
 .main {
-  background-image: url('~@/assets/main-bg.png');
+  background-image: url('~@/assets/FirstPage/main-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -14,9 +14,6 @@
   &__body {
     width: 100%;
     height: auto;
-    // @media (max-width: $breakpoint_phone) {
-    //   margin-top: 132px;
-    // }
   }
   &__footer {
     width: 100%;

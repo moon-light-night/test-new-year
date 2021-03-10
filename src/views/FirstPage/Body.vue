@@ -58,7 +58,11 @@
           />
           <Button class="btn btn-form" :msg="msg"></Button>
         </form>
-        <img src="@/assets/form-icicles.png" alt="img" class="form__icicles" />
+        <img
+          src="@/assets/FirstPage/form-icicles.png"
+          alt="img"
+          class="form__icicles"
+        />
       </div>
     </div>
     <div class="body__tree"></div>

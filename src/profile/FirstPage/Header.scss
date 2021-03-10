@@ -9,38 +9,31 @@
   }
   &__lights {
     position: absolute;
-    background-image: url('~@/assets/lights.png');
+    background-image: url('~@/assets/FirstPage/lights.png');
     background-repeat: no-repeat;
     background-position: center center;
     height: 232px;
-    @media (max-width: 1710px) {
-      min-width: 1710px;
-    }
+    min-width: 100%;
+    overflow-x: hidden;
     @media (max-width: $breakpoint_phone) {
-      background-image: url('~@/assets/lights.png'),
-        url('~@/assets/lights2.png');
+      background-image: url('~@/assets/FirstPage/lights.png'),
+        url('~@/assets/FirstPage/lights2.png');
       background-position-x: -600px, -500px !important;
       background-position-y: 0, -11px;
     }
   }
   &__yandex-body-wrap {
     z-index: 1;
-    background-image: url('~@/assets/yandex-ellipse.png');
+    background-image: url('~@/assets/FirstPage/yandex-ellipse.png');
     background-size: 100% 139px;
     background-repeat: no-repeat;
     width: 377px;
     height: 177px;
     display: flex;
     flex-direction: column;
-    // margin: -153.25px auto 0 auto;
-
     padding-top: 53px !important;
     z-index: 100;
-    // @media (max-width: $breakpoint_phone) {
-    //   margin: -195px auto 0 auto;
-    // }
     @media (max-width: $breakpoint_mini_second_page) {
-      // margin: -195px auto 0 auto;
       width: 200px;
       padding-top: 37px !important;
       height: auto;
@@ -52,7 +45,7 @@
     justify-content: space-evenly;
   }
   &__yandex-plus {
-    background-image: url('~@/assets/yandex-plus.png');
+    background-image: url('~@/assets/FirstPage/yandex-plus.png');
     background-size: 100% 100%;
     width: 183.6px;
     height: 38.79px;
@@ -65,7 +58,7 @@
     }
   }
   &__yandex-kino {
-    background-image: url('~@/assets/yandex-kino.png');
+    background-image: url('~@/assets/FirstPage/yandex-kino.png');
     background-size: 100% 100%;
     width: 38.79px;
     height: 38.79px;
@@ -78,7 +71,7 @@
     }
   }
   &__yandex-music {
-    background-image: url('~@/assets/yandex-music.png');
+    background-image: url('~@/assets/FirstPage/yandex-music.png');
     background-size: 100% 100%;
     width: 38.79px;
     height: 38.79px;
@@ -91,17 +84,24 @@
     }
   }
   &__gradient {
-    background-image: url('~@/assets/big-ellipse.png');
+    position: absolute;
+    background-image: url('~@/assets/FirstPage/big-ellipse.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 1200px;
     height: 503px;
     top: 120px;
-    // margin: -131.89px auto 0 auto;
-    position: absolute;
+    overflow-x: hidden;
+    @media (max-width: 1200px) {
+      width: 100%;
+      background-size: 120% 100%;
+      background-position-x: center;
+    }
     @media (max-width: $breakpoint_tablet) {
-      width: 120%;
-      // background-position-x: -100px;
+      background-size: 120% 100%;
+      width: 100%;
+      overflow-x: hidden;
+      background-position-x: center;
     }
     @media (max-width: 500px) {
       height: 100% !important;
@@ -111,6 +111,7 @@
       width: 100%;
       background-position-x: -30px;
       background-repeat: no-repeat;
+      background-size: 100% 100%;
       top: 150px;
     }
   }
@@ -137,9 +138,5 @@
       margin-top: 32px;
       margin-top: 22px;
     }
-    // @media (max-width: $breakpoint_mini) {
-    //   margin-top: 32px;
-    //   margin-top: 22px;
-    // }
   }
 }

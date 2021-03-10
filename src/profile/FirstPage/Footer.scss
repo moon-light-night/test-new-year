@@ -6,14 +6,14 @@
     margin: 0 auto;
   }
   &__trees {
-    background-image: url('~@/assets/footer-trees.png');
+    background-image: url('~@/assets/FirstPage/footer-trees.png');
     background-repeat: no-repeat;
     background-position: center 8px;
     width: 100%;
     height: 114.09px;
   }
   &__rectangle {
-    background-image: url('~@/assets/footer-rectangle.png');
+    background-image: url('~@/assets/FirstPage/footer-rectangle.png');
     width: 100%;
     height: 281px;
   }
@@ -58,36 +58,6 @@
     }
     &:hover {
       cursor: pointer;
-    }
-    &:nth-child(1) {
-      background-image: url('~@/assets/telega.png');
-      &:hover {
-        background-image: url('~@/assets/telega-blue.png');
-      }
-    }
-    &:nth-child(2) {
-      background-image: url('~@/assets/whatsapp.png');
-      &:hover {
-        background-image: url('~@/assets/whatsapp-blue.png');
-      }
-    }
-    &:nth-child(3) {
-      background-image: url('~@/assets/viber.png');
-      &:hover {
-        background-image: url('~@/assets/viber-blue.png');
-      }
-    }
-    &:nth-child(4) {
-      background-image: url('~@/assets/fb.png');
-      &:hover {
-        background-image: url('~@/assets/fb-blue.png');
-      }
-    }
-    &:nth-child(5) {
-      background-image: url('~@/assets/vk.png');
-      &:hover {
-        background-image: url('~@/assets/vk-blue.png');
-      }
     }
   }
   &__link {
