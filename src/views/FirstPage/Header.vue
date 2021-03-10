@@ -1,23 +1,15 @@
 <template>
-  <div>
-    <div class="header__lights"></div>
-<<<<<<< HEAD
-    <NavList></NavList>
-    <div class="header__gradient"></div>
-=======
-    <div class="header__content">
-      <Yandex></Yandex>
-      <div class="header__gradient"></div>
-    </div>
->>>>>>> tmp
-  </div>
+  <header class="header__content">
+    <LogoYandex class="header__logo-yandex"></LogoYandex>
+    <!-- <div class="header__gradient"></div> -->
+  </header>
 </template>
 
 <script>
-import NavList from '@/components/NavList'
+import LogoYandex from '@/components/LogoYandex'
 export default {
   components: {
-    NavList,
+    LogoYandex,
   },
 }
 </script>

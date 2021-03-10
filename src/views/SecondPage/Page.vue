@@ -21,7 +21,7 @@
 <script>
 import Header from './Header'
 import Body from './Body'
-import Footer from '../FirstPage/Footer'
+import Footer from '../../components/Footer'
 export default {
   components: {
     Header,

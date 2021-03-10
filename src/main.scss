@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 @import '~normalize.css/normalize.css';
-=======
-@import '@/profile/SecondPage/Header.scss';
-@import '@/profile/SecondPage/Content.scss';
-@import '@/profile/SecondPage/Body.scss';
->>>>>>> tmp
 
 @import '@/profile/FirstPage/Content.scss';
 @import '@/profile/FirstPage/Body.scss';
-@import '@/profile/FirstPage/Footer.scss';
 @import '@/profile/FirstPage/Header.scss';
 
 @import '@/profile/SecondPage/Header.scss';
 @import '@/profile/SecondPage/Content.scss';
 @import '@/profile/SecondPage/Body.scss';
-@import '@/profile/SecondPage/Footer.scss';
 
 @import '@/profile/variables.scss';
 
@@ -22,7 +14,7 @@
 *::before,
 *::after {
   font-family: 'YS Text';
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 @font-face {
   font-family: 'YS Text';
@@ -59,6 +51,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 ul[class],
@@ -94,11 +87,11 @@ select {
   font: inherit;
 }
 html {
-  min-width: 260px;
+  min-width: 320px;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 body {
   height: auto;
-  overflow: hidden;
   background-color: #dcedf1;
 }
