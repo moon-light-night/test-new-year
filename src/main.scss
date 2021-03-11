@@ -48,9 +48,11 @@ dd {
 
 body {
   scroll-behavior: smooth;
+  height: auto;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: #dcedf1;
 }
 
@@ -89,5 +91,6 @@ select {
 html {
   min-width: 320px;
   box-sizing: border-box;
-  overflow: scroll;
+  min-height: max-content;
+  overflow-x: hidden;
 }

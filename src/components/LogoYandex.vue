@@ -31,14 +31,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 53px !important;
-
-  // @media (max-width: $breakpoint_phone) {
-  //   margin: -195px auto 0 auto;
-  //   width: 310px;
-  // }
-  // @media (max-width: $breakpoint_mini) {
-  //   margin: -12px auto 0 auto;
-  // }
   @media (max-width: $breakpoint_mini_second_page) {
     width: 200px;
     padding-top: 37px !important;

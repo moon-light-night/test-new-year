@@ -39,7 +39,6 @@
     z-index: 1;
     top: -100px;
     right: -20px;
-    overflow-x: hidden;
     @media (max-width: $breakpoint_mini_first_page) {
       background-image: url('~@/assets/FirstPage/tree-small.png');
       background-size: contain;
@@ -62,7 +61,7 @@
       font-size: 42px;
     }
     @media (max-width: $breakpoint_mini_first_page) {
-      font-size: 32px;
+      font-size: 30px;
       margin: 0 0 13px 0;
       width: 87vw;
       line-height: 102.5%;
